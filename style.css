@@ -1,0 +1,200 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(43, 42, 42);
+}
+.nav{
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0px;
+    background-color:rgb(43, 42, 42); 
+    border-bottom: solid 1px white;
+}
+.menu{
+    display: flex;
+    flex-direction:row;
+    gap: 3vw;
+    color: white;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    color: rgb(130, 130, 130);
+}
+#hero{
+    display: flex;
+    padding: 1vw;
+    justify-content: space-around;
+    margin-top: 1vw;
+}
+.hero_text{
+    padding: 1vw;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.hero_text h1{
+    font-size: 60px;
+}
+.hero_text h2{
+    font-size: 30px;
+    color: rgb(255, 130, 57);
+}
+.hero_text button{
+    width: fit-content;
+    height: fit-content;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgb(159, 159, 255);
+    margin-top: 1vw;
+}
+.hero_text button:hover{
+    background-color: white;
+    color: black;
+}
+.hero_text button a{
+    color: black;
+    text-decoration: none;
+}
+.hero_image{
+    padding: 1vw;
+}
+.hero_image img{
+    height: 30vw;
+    width: 30vw;
+    border-radius: 20vw;
+    display: inline;
+}
+#About{
+    padding: 2vw;
+    color: white;
+}
+#About p{
+    padding: 1vw;
+    margin-left: 2vw;
+    line-height: 3vw;
+}
+#About p span{
+    color: yellow;
+}
+#projects{
+    padding: 1vw;
+    margin: 1vw;
+    color: white;
+}
+.project_card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+.card{
+    flex-basis: 25%;
+    flex-grow: 1;
+    border: solid 2px rgb(70, 69, 69);
+    padding: 1vw;
+    border-radius: 1vw;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+}
+.card button{
+    width:fit-content;
+    height:fit-content;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: none;
+    background-color: rgb(159, 159, 255);
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+.card button a{
+    color: black;
+    text-decoration: none;
+}
+.card button:hover{
+    background-color: white;
+    color: black;
+}
+#contact{
+    padding: 1vw;
+    margin: 1vw;
+    margin-top: 2vw;
+}
+.contact{
+    text-align: center;
+    padding: 1vw;
+    margin: 1vw;
+}
+.contact a{
+    text-decoration: none;
+    color: white;
+}
+.contact a:hover{
+    color: rgb(128, 128, 128);
+}
+.nav2{
+    padding: 1vw;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    position: sticky;
+    top: 0px;
+    background-color:rgb(43, 42, 42); 
+    border-bottom: solid 1px white;
+}
+.menu_1{
+    display: flex;
+    gap: 2vw;
+    flex-direction: column;
+    padding: 2vw;
+    background-color:rgb(43, 42, 42); 
+    width: 30%;
+    margin-left: -40%;
+    position: absolute;
+    top: 4vw;
+    z-index: 3;
+}
+.menu_1 p{
+    text-align: right;
+    cursor: pointer;
+}
+.menu_1 a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width:600px) {
+    .nav{
+        display: none;
+    }
+    .nav2{
+        display: flex;
+    }
+    body{
+        font-size: 50%;
+    }
+    .hero_text h1{
+        font-size: 30px;
+    }
+    .hero_text h2{
+        font-size: 15px;
+    }
+    .card{
+        flex-basis: 45%;
+        flex-grow: 1;
+    }
+}
